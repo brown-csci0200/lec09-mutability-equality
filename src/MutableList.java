@@ -1,5 +1,5 @@
 @SuppressWarnings("ALL")
-public class MutableList<T> {
+public class MutableList {
     private Node start;
 
     public MutableList() {
