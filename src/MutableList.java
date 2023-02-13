@@ -1,13 +1,13 @@
 @SuppressWarnings("ALL")
 public class MutableList<T> {
-    private Node<T> start;
+    private Node start;
 
     public MutableList() {
         this.start = null;
     }
 
-    public void addFirst(T newElt) {
-        Node<T> newNode = new Node<T>(newElt, this.start);
+    public void addFirst(int newElt) {
+        Node newNode = new Node(newElt, this.start);
         this.start = newNode;
     }
 

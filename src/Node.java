@@ -1,9 +1,9 @@
 @SuppressWarnings("FieldMayBeFinal")
-public class Node<T> {
-    private T first;
-    private Node<T> next;
+public class Node {
+    private int first;
+    private Node next;
 
-    public Node(T newElt, Node<T> next) {
+    public Node(int newElt, Node next) {
         this.first = newElt;
         this.next = next;
     }
