@@ -1,15 +1,23 @@
 package src;
 
+/*
+ * Two announcements
+ *  - Decision tree partner form out after class today
+ *  - **Due Thursday by 5pm**
+ *
+ *  - Look for document with hw1b feedback
+ */
+
 @SuppressWarnings("ALL")
-public class MutableList {
-    private Node start;
+public class MutableList<T> {
+    private Node start;  // Points to the first element in the list
 
     public MutableList() {
         this.start = null;
     }
 
-    public void addFirst(int newElt) {
-        Node newNode = new Node(newElt, this.start);
+    public void addFirst(T newElt) {
+        Node newNode = new Node<T>(newElt, this.start);
         this.start = newNode;
     }
 

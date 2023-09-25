@@ -17,4 +17,8 @@ public class Course {
         this.enrolled = this.enrolled - 1;
     }
 
+
+    public String toString() {
+        return "Course[" + this.name + ", " + this.enrolled + "]";
+    }
 }
