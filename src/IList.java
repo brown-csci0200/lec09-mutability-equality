@@ -1,3 +1,5 @@
+package src;
+
 public interface IList<T> {
     // returns number of elements in a list
     public int size();

@@ -1,3 +1,5 @@
+package src;
+
 public abstract class AbsLinkList<T> implements IList<T> {
 
     // produces list with given newElt followed by elements of this

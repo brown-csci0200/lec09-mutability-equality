@@ -1,3 +1,5 @@
+package src;
+
 @SuppressWarnings("ALL")
 public class MutableList {
     private Node start;

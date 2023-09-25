@@ -1,3 +1,5 @@
+package src;
+
 @SuppressWarnings("FieldMayBeFinal")
 public class Node {
     private int first;

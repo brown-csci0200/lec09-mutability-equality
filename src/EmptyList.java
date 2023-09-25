@@ -1,3 +1,5 @@
+package src;
+
 public class EmptyList<T> extends AbsLinkList<T> implements IList<T> {
 
     // returns number of elements in a list
