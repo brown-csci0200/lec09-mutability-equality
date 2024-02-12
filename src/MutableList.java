@@ -1,15 +1,15 @@
 package src;
 
 @SuppressWarnings("ALL")
-public class MutableList {
+public class MutableList<T> {
     private Node start;
 
     public MutableList() {
         this.start = null;
     }
 
-    public void addFirst(int newElt) {
-        Node newNode = new Node(newElt, this.start);
+    public void addFirst(T newElt) {
+        Node<T> newNode = new Node<T>(newElt, this.start);
         this.start = newNode;
     }
 

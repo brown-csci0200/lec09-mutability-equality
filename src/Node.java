@@ -1,11 +1,11 @@
 package src;
 
 @SuppressWarnings("FieldMayBeFinal")
-public class Node {
-    private int first;
-    private Node next;
+public class Node<T> {
+    private T first;
+    private Node<T> next;
 
-    public Node(int newElt, Node next) {
+    public Node(T newElt, Node next) {
         this.first = newElt;
         this.next = next;
     }
