@@ -1,10 +1,10 @@
 package src;
 
-public class Link<T> extends AbsLinkList<T> implements IList<T> {
+public class NodeList<T> extends AbsLinkList<T> implements IList<T> {
     T first;
     IList<T> rest;
 
-    public Link(T f, IList<T> r) {
+    public NodeList(T f, IList<T> r) {
         super();
         this.first = f;
         this.rest = r;

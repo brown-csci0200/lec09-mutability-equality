@@ -6,14 +6,22 @@ public class Lec09 {
     public static void main(String[] args) {
         // Here are the examples we talked about in class
         // See each method below for the code, uncomment to run
+//        nullExample();
 //        genericTypesExample();
-//        thisExample();
 //        courseExampleImmutableList();
 //        courseExampleMutableList();
+//
+//        Bonus content
+//        thisExample();
 //        courseExampleImmutableListExtra(); // bonus version
 
         // Example we didn't see yet
         // equalityExample();
+    }
+
+    public static void nullExample() {
+        MutableList<Integer> L = new MutableList<Integer>();
+        System.out.println(L.size());
     }
 
     public static void thisExample() {

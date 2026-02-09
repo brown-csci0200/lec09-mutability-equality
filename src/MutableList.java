@@ -1,15 +1,24 @@
 package src;
 
-/*
- * Two announcements
- *  - Decision tree partner form out after class today
- *  - **Due Thursday by 5pm**
- *
- *  - Look for document with hw1b feedback
- */
-
 @SuppressWarnings("ALL")
 public class MutableList<T> {
+
+    @SuppressWarnings("FieldMayBeFinal")
+    private class Node<S> {
+        private S first;
+        private Node next;
+
+        public Node(S newElt, Node next) {
+            this.first = newElt;
+            this.next = next;
+        }
+
+        public int size() {
+            // WARNING WARNING WARNING:  This is wrong!  What's missing????????
+            return 1 + this.next.size();
+        }
+    }
+
     private Node start;  // Points to the first element in the list
 
     public MutableList() {
@@ -21,29 +30,17 @@ public class MutableList<T> {
         this.start = newNode;
     }
 
+    public int size() {
+        if (this.start == null) {
+            return 0;
+        } else {
+            return this.start.size();
+        }
+    }
+
     @Override
     public String toString() {
         return "[" + this.start.toString() + "]";
     }
-
-    //    /**
-//     * Checks if the two lists of integers are equal
-//     *
-//     * @param l1 - an Integer IList
-//     * @param l2 - an Integer IList
-//     * @return true if l1 and l2 have the same items in the same locations.
-//     */
-//    public boolean compareTwoLists(IList<Integer> l1, IList<Integer> l2) {
-//        if (l1.size() != l2.size()) {
-//            return false;
-//        } else {
-//            for (int i = 0; i < l1.size(); i++) {
-//                if (!(l1.get(i).equals(l2.get(i)))) {
-//                    return false;
-//                }
-//            }
-//            return true;
-//        }
-//    }
 
 }
